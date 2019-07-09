@@ -33,10 +33,6 @@
             this._shadowRoot = this.attachShadow({mode: 'open'});
             this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
             this._svgContainer;
-
-            this._shadowRoot = this.attachShadow({mode: 'open'});
-            this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
-            this._svgContainer;
     
             this._outerRad = 0.0;
             this._endAngleDeg = 0.0;

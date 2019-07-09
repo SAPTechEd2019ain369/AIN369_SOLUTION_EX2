@@ -11,7 +11,7 @@
 	"webcomponents": [
 		{
 			"kind": "main",
-			"tag": "com-sap-teched-gauge-solution-exe1",
+			"tag": "com-sap-teched-gauge-solution-exe2",
             "url": "https://sapteched2019ain369.github.io/AIN369_SOLUTION_EX2/webcomponent.js",
 			"properties": [
 			],
@@ -20,7 +20,7 @@
 		},
 		{
 			"kind": "styling",
-			"tag": "com-sap-teched-gauge-solution-exe1-aps",
+			"tag": "com-sap-teched-gauge-solution-exe2-aps",
             "url": "https://sapteched2019ain369.github.io/AIN369_SOLUTION_EX2/aps_webcomponent.js",
 			"properties": [
 			],
