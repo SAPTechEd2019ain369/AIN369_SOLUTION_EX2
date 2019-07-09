@@ -32,6 +32,7 @@
             
             this._shadowRoot = this.attachShadow({mode: 'open'});
             this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
+            this.style.height = "100%";  //Beta Workaround
             this._svgContainer;
     
             this._outerRad = 0.0;
