@@ -84,7 +84,7 @@
             ///////////////////////////////////////////	
             //Lets build a border ring around the gauge
             ///////////////////////////////////////////
-            var visRing = window._d3.select(this._svgContainer).append("svg:svg").attr("width", "100%").attr("height", "100%");
+            var visRing = window._d3.select(this._shadowRoot).append("svg:svg").attr("width", "100%").attr("height", "100%");
                 
             var ringOuterRad = this._outerRad + ( -1 * this._ringThickness);  //Outer ring starts at the outer radius of the inner arc
     
@@ -104,7 +104,7 @@
             ///////////////////////////////////////////
             //Lets build a the start and end lines
             ///////////////////////////////////////////
-            var visStartBracket = window._d3.select(this._svgContainer).append("svg:svg").attr("width", "100%").attr("height", "100%");
+            var visStartBracket = window._d3.select(this._shadowRoot).append("svg:svg").attr("width", "100%").attr("height", "100%");
             var lineData = [endPoints (this._outerRad, this._startAngleDeg), {x:this._outerRad, y:this._outerRad}, endPoints (this._outerRad, this._endAngleDegMax)];
             var lineFunction = window._d3.line()
                 .x(function(d) { return d.x; })
