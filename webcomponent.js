@@ -108,8 +108,7 @@
             var lineData = [this.endPoints(this._outerRad, this._startAngleDeg), {x:this._outerRad, y:this._outerRad}, this.endPoints (this._outerRad, this._endAngleDegMax)];
             var lineFunction = window._d3.line()
                 .x(function(d) { return d.x; })
-                .y(function(d) { return d.y; })
-                .interpolate("linear");
+                .y(function(d) { return d.y; });
                                         
             var borderLines = this._svgContainer
                 .attr("width", me.$().width()).attr("height", me.$().height()) // Added height and width so line is visible
