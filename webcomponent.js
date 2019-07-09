@@ -111,7 +111,7 @@
                 .y(function(d) { return d.y; });
                                         
             var borderLines = this._svgContainer
-                .attr("width", me.$().width()).attr("height", me.$().height()) // Added height and width so line is visible
+                .attr("width", this._widgetWidth).attr("height", this._widgetWidth) // Added height and width so line is visible
                 .append("path")
                 .attr("d", lineFunction(lineData))
                 .attr("stroke", this._ringColorCode)
