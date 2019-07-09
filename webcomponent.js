@@ -105,7 +105,7 @@
             //Lets build a the start and end lines
             ///////////////////////////////////////////
             var visStartBracket = window._d3.select(this._shadowRoot).append("svg:svg").attr("width", "100%").attr("height", "100%");
-            var lineData = [endPoints (this._outerRad, this._startAngleDeg), {x:this._outerRad, y:this._outerRad}, endPoints (this._outerRad, this._endAngleDegMax)];
+            var lineData = [this.endPoints(this._outerRad, this._startAngleDeg), {x:this._outerRad, y:this._outerRad}, this.endPoints (this._outerRad, this._endAngleDegMax)];
             var lineFunction = window._d3.line()
                 .x(function(d) { return d.x; })
                 .y(function(d) { return d.y; })
