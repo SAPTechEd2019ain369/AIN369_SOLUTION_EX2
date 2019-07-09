@@ -68,7 +68,7 @@
             var pi = Math.PI;		
             this._outerRad = (this._widgetWidth)/2;
 
-            var arcDef = window._d3.svg.arc()
+            var arcDef = window._d3.arc()
                 .innerRadius(0)
                 .outerRadius(this._outerRad);
 
@@ -88,7 +88,7 @@
                 
             var ringOuterRad = this._outerRad + ( -1 * this._ringThickness);  //Outer ring starts at the outer radius of the inner arc
     
-            var ringArcDefinition = window._d3.svg.arc()
+            var ringArcDefinition = window._d3.arc()
                 .innerRadius(this._outerRad)
                 .outerRadius(ringOuterRad)
                 .startAngle(this._startAngleDeg * (pi/180)) //converting from degs to radians
